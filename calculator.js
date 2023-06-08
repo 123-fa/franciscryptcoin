@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#crypto-currency").change(function () {
     var valueOfUsd = $("#usd-price").val();
     var cryptoCoin = $(this).val();
-    const nigeriaValue = (valueOfUsd * 580).tofixed(6) .replace(/\B(? =(\d{3})+(?! \d))/g, ","); // rounding up to two decimal places
+    const nigeriaValue = (valueOfUsd * 580).toFixed(6) .replace(/\B(? =(\d{3})+(?! \d))/g, ","); // rounding up to two decimal places
     const btcValue = (
       ((valueOfUsd / 21336.11) * 1000000000) /
       1000000000
